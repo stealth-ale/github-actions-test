@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - 'feature/**' # Run whenever are repo starting with feature/ gets a push
   # schedule:
   #   - cron: "0/5 * * * *"
   #   - cron: "0/6 * * * *"

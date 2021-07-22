@@ -5,6 +5,10 @@ on:
     branches:
       - master
       - 'feature/**' # Run whenever are repo starting with feature/ gets a push
+    tags:
+      - v1.* # Apply to tags starting with v1.
+    paths:
+      - '**.js' # Run only if javascript files have been changed
   # schedule:
   #   - cron: "0/5 * * * *"
   #   - cron: "0/6 * * * *"
